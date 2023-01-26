@@ -18,4 +18,7 @@
     <string name="_10_12">10:12</string>
     <string name="_03">03</string>
     <string name="september">September</string>
+    <string name="change_password">Change Password</string>
+    <string name="change_language">Change Language</string>
+    <string name="logout">Logout</string>
 </resources>
