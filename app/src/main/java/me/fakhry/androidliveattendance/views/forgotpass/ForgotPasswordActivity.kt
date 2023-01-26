@@ -1,8 +1,7 @@
 package me.fakhry.androidliveattendance.views.forgotpass
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import me.fakhry.androidliveattendance.R
+import androidx.appcompat.app.AppCompatActivity
 import me.fakhry.androidliveattendance.databinding.ActivityForgotPasswordBinding
 
 class ForgotPasswordActivity : AppCompatActivity() {
@@ -15,6 +14,13 @@ class ForgotPasswordActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         init()
+        onClick()
+    }
+
+    private fun onClick() {
+        binding.tbForgotPassword.setNavigationOnClickListener {
+            finish()
+        }
     }
 
     private fun init() {

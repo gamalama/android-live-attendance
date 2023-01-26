@@ -1,10 +1,10 @@
 package me.fakhry.androidliveattendance.views.attendance
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
@@ -12,20 +12,30 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import me.fakhry.androidliveattendance.R
+import me.fakhry.androidliveattendance.databinding.FragmentAttendanceBinding
 
 class AttendanceFragment : Fragment(), OnMapReadyCallback {
 
     private var mapAttendance: SupportMapFragment? = null
     private var map: GoogleMap? = null
+    private var binding: FragmentAttendanceBinding? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? = inflater.inflate(R.layout.fragment_attendance, container, false)
+    ): View? {
+        binding = FragmentAttendanceBinding.inflate(inflater, container, false)
+        return binding?.root
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupMaps()
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        binding = null
     }
 
     private fun setupMaps() {
