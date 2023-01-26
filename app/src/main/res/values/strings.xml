@@ -14,4 +14,8 @@
     <string name="default_text">-</string>
     <string name="your_photo">Your Photo</string>
     <string name="check_in">Check In</string>
+    <string name="check_out">Check Out</string>
+    <string name="_10_12">10:12</string>
+    <string name="_03">03</string>
+    <string name="september">September</string>
 </resources>
