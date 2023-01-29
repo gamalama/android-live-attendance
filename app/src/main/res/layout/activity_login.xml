@@ -61,7 +61,7 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/bg_edit_text"
                 android:hint="@string/password"
-                android:inputType="textEmailAddress"
+                android:inputType="textPassword"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
                 android:textColorHint="#546E7A" />
