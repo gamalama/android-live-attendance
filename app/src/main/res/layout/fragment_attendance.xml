@@ -30,7 +30,8 @@
         android:tint="@color/colorPrimary"
         android:translationY="-40dp"
         app:layout_anchor="@id/layout_bottom_sheet"
-        app:layout_anchorGravity="top|end" />
+        app:layout_anchorGravity="top|end"
+        tools:ignore="ContentDescription" />
 
     <include
         android:id="@+id/layout_bottom_sheet"
