@@ -15,6 +15,10 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        // BASE_URL
+        buildConfigField "String", "BASE_URL", "\"http://192.168.18.67:8000/api/\""
+        buildConfigField "String", "BASE_IMAGE_URL", "\"http://192.168.18.67:8000/storage/profile/\""
     }
 
     buildTypes {
