@@ -115,7 +115,7 @@ class LoginActivity : AppCompatActivity() {
             binding.etEmailLogin.requestFocus()
         } else if (password.isEmpty()) {
             binding.etEmailLogin.error = null
-            binding.etPasswordLogin.error = getString(R.string.pleas_field_your_password)
+            binding.etPasswordLogin.error = getString(R.string.please_field_your_password)
             binding.etPasswordLogin.requestFocus()
         } else {
             binding.etEmailLogin.error = null
