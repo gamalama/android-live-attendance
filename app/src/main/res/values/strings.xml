@@ -8,16 +8,14 @@
     <string name="history">History</string>
     <string name="location">Location</string>
     <string name="profile">Profile</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="current_location">Current Location</string>
-    <string name="default_text">-</string>
+    <string name="default_text" translatable="false">-</string>
     <string name="your_photo">Your Photo</string>
     <string name="check_in">Check In</string>
     <string name="check_out">Check Out</string>
-    <string name="_10_12">10:12</string>
-    <string name="_03">03</string>
-    <string name="september">September</string>
+    <string name="_10_12" translatable="false">10:12</string>
+    <string name="_03" translatable="false">03</string>
+    <string name="september" translatable="false">September</string>
     <string name="change_password">Change Password</string>
     <string name="change_language">Change Language</string>
     <string name="logout">Logout</string>
@@ -26,12 +24,12 @@
     <string name="old_password">Old Password</string>
     <string name="please_field_your_email">Please field your email</string>
     <string name="please_use_valid_email">Please use valid email</string>
-    <string name="pleas_field_your_error">Please field your password</string>
+    <string name="please_field_your_password">Please field your password</string>
     <string name="failed">Failed</string>
     <string name="success">Success</string>
     <string name="not_granted">Not Granted</string>
     <string name="required_permission">Required Permission</string>
-    <string name="search_your_location">Search your location...</string>
+    <string name="search_your_location">Search your location…</string>
     <string name="failed_to_capture_image">Failed to capture image</string>
     <string name="alert">Alert</string>
     <string name="please_take_your_photo">Please take your photo</string>

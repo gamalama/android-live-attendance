@@ -1,9 +1,6 @@
 package me.fakhry.androidliveattendance.networking
 
-import me.fakhry.androidliveattendance.model.AttendanceResponse
-import me.fakhry.androidliveattendance.model.ForgotPasswordResponse
-import me.fakhry.androidliveattendance.model.HistoryResponse
-import me.fakhry.androidliveattendance.model.LoginResponse
+import me.fakhry.androidliveattendance.model.*
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import retrofit2.Call
@@ -34,4 +31,8 @@ interface LiveAttendanceApiServices {
         @Query("from") fromDate: String,
         @Query("to") toDate: String
     ): Call<HistoryResponse>
+
+    @Headers("Accept: application/json", "Content-Type: application/json")
+    @POST("auth/logout")
+    fun logoutRequest(@Header("Authorization") token: String): Call<LogoutResponse>
 }
