@@ -9,11 +9,15 @@ import retrofit2.http.*
 interface LiveAttendanceApiServices {
     @Headers("Accept: application/json", "Content-Type: application/json")
     @POST("auth/login")
-    fun loginRequest(@Body body: String): Call<LoginResponse>
+    fun loginRequest(
+        @Body body: String
+    ): Call<LoginResponse>
 
     @Headers("Accept: application/json", "Content-Type: application/json")
     @POST("auth/password/forgot")
-    fun forgotPasswordRequest(@Body body: String): Call<ForgotPasswordResponse>
+    fun forgotPasswordRequest(
+        @Body body: String
+    ): Call<ForgotPasswordResponse>
 
     @Multipart
     @Headers("Accept: application/json")
@@ -34,5 +38,14 @@ interface LiveAttendanceApiServices {
 
     @Headers("Accept: application/json", "Content-Type: application/json")
     @POST("auth/logout")
-    fun logoutRequest(@Header("Authorization") token: String): Call<LogoutResponse>
+    fun logoutRequest(
+        @Header("Authorization") token: String
+    ): Call<LogoutResponse>
+
+    @Headers("Accept: application/json", "Content-Type: application/json")
+    @POST("auth/password/reset")
+    fun changePassword(
+        @Header("Authorization") token: String,
+        @Body body: String
+    ): Call<ChangePasswordResponse>
 }
