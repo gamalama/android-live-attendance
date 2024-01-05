@@ -32,6 +32,7 @@ object RetrofitClient {
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .addConverterFactory(ScalarsConverterFactory.create())
             .addConverterFactory(GsonConverterFactory.create(gsonBuilder))
+            .client(okHttpClient)
             .build()
     }
 }
